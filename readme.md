@@ -44,20 +44,13 @@ KDD-2025-Data-Track/
    - Load and merge LandSat and Sentinel data
    - Normalize and scale features
 2. **Model Selection**:
-   - ML: `RandomForest`, `XGBoost`, `LightGBM`
-   - Deep Learning: `CNNs`, `LSTMs`, `Transformers`
+   - Deep Learning: `Resnet34`
 3. **Training Process**:
    - Hyperparameter tuning
-   - Cross-validation (K-Fold, Time Series Split)
    - Loss function optimization
 4. **Evaluation Metrics**:
-   - Accuracy, Precision, Recall, F1-Score
-   - ROC-AUC for classification tasks
+   - Accuracy, Precision, Recall, F1-Score, IoU
 
-## Data Splitting Strategy
-- **Stratified Sampling**: Ensures balanced class distribution.
-- **Time-based Splitting**: Used for temporal satellite data analysis.
-- **Cross-validation**: Enhances model generalization.
 
 ## Crop Classification Mapping
 The `Crop-Groups.csv` file maps crop types into broader classifications:
@@ -86,10 +79,6 @@ python process_sentinel.py
 ```bash
 cd Model_Training
 python train_model.py
-```
-### Evaluate the Model
-```bash
-python evaluate_model.py
 ```
 
 ## Contributing
