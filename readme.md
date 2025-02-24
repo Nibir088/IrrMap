@@ -1,7 +1,7 @@
-# KDD 2025 Data Track Repository
+# IrrMap
 
 ## Overview
-The **KDD 2025 Data Track Repository** is designed to process satellite imagery data from LandSat and Sentinel missions for developing and training machine learning models for crop classification. This repository includes tools for data preprocessing, feature extraction, model training, and evaluation.
+The **IrrMap** is designed to process satellite imagery data from LandSat and Sentinel missions for developing and training machine learning models for crop classification. This repository includes tools for data preprocessing, feature extraction, model training, and evaluation.
 
 ## Repository Structure
 ```
