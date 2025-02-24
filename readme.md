@@ -89,7 +89,6 @@ Contributions are welcome! To contribute:
 4. Submit a pull request.
 
 ## License
-This project is licensed under the **MIT License**. See `LICENSE` for details.
 
 ## Contact & Support
 For issues or inquiries, open an issue on [GitHub Issues](https://github.com/Nibir088/KDD-2025-Data-Track/issues).
