@@ -101,7 +101,18 @@ pip install -r requirements.txt
 ### Process Data
 ```bash
 cd LandSat_Processing
-python process_landsat.py
+./sample_landsat_processing_pipeline.sh
+
+or 
+python find_available_data_landsat.py -s AZ -y 2016
+
+python download_available_data_landsat.py -s AZ -y 2016 -u "username" -p "password"
+
+python extract_files.py -s AZ
+
+python create_patches_landsat.py -s AZ
+
+python create_label_landsat.py --state AZ --year 2016
 
 cd Sentinel_Processing
 python process_sentinel.py
