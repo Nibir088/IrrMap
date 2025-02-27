@@ -1,7 +1,35 @@
 # IrrMap
 
 ## Overview
-The **IrrMap** is designed to process satellite imagery data from LandSat and Sentinel missions for developing and training machine learning models for crop classification. This repository includes tools for data preprocessing, feature extraction, model training, and evaluation.
+The **IrrMap** is designed to process satellite imagery data from LandSat and Sentinel missions for developing and training machine learning models for irrigation classification. This repository includes tools for data preprocessing, feature extraction, model training, and evaluation.
+
+## Data Repository
+
+Labeled data has been collected from different sources as follows:
+- Arizona: https://catalog.data.gov/dataset/verified-irrigated-agricultural-lands-for-the-united-states-200217
+- Utah: https: //dwre-utahdnr.opendata.arcgis.com/pages/wrlu-data
+- Washington: https://agr.wa.gov/departments/land-and-water/natural-resources/agricultural-land-use
+- Colorado: https://dwr.colorado.gov/services/data-information/gis
+
+We processed this data and created patches following **IrrMap** paper (given in the repository). Processed data can be downloaded from https://huggingface.co/Nibir/IrrMap. Data Structure of the given repository:
+
+```
+IrrMap/
+│── LandSat_Label.zip     # dataset contains labels for LandSat patches of shape 224x224 
+│── Sentinel_Label.zip    # dataset contains labels for Sentinel patches of shape 224x224 
+│── shape-file.zip        # Raw shape-file collected from different sources 
+│── LandSat/              # LandSat imagery patches divided into two zip files. ``readme.md'' contains meta data information.
+|── |── LandSat_part1.zip
+|── |── LandSat_part2.zip
+|── |── readme.md
+│── Sentinel/             # Sentinel imagery patches for each states. ``readme.md'' contains meta data information.
+|── |── AZ
+|── |── CO
+|── |── UT
+|── |── WA
+|── |── readme.md      
+```
+
 
 ## Repository Structure
 ```
