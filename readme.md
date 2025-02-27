@@ -48,14 +48,12 @@ KDD-2025-Data-Track/
 ### LandSat Data Processing
 - **Data Acquisition**: Downloading LandSat data.
 - **Preprocessing**:
-  - Atmospheric correction
-  - Radiometric calibration
   - Resampling and reprojection
   - Cloud masking
+  - Quality checking through QA_Band
 - **Feature Extraction**:
   - Vegetation indices (NDVI, EVI)
-  - Texture features
-  - Spectral band combinations
+  - Spectral band combinations (stacking)
 
 ### Sentinel Data Processing
 - **Data Retrieval**: Fetching Sentinel-1 (SAR) and Sentinel-2 (multispectral) imagery.
@@ -67,6 +65,10 @@ KDD-2025-Data-Track/
   - Polarimetric decomposition (SAR)
   - Spectral indices calculation
   - Temporal feature stacking
+ 
+### Data Labeling
+- Preprocessing: Reprojection (EPSG:4326)
+- Label Merging: Shapely Library for overlay
 
 ## Model Training Pipeline
 1. **Data Preparation**:
