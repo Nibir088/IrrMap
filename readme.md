@@ -11,7 +11,7 @@ Labeled data has been collected from different sources as follows:
 - Washington: https://agr.wa.gov/departments/land-and-water/natural-resources/agricultural-land-use
 - Colorado: https://dwr.colorado.gov/services/data-information/gis
 
-We processed this data and created patches following **IrrMap** paper (given in the repository). Processed data can be downloaded from https://huggingface.co/Nibir/IrrMap. Data Structure of the given repository:
+We processed this data and created patches following **IrrMap** paper (given in the repository). Processed data can be downloaded from [https://huggingface.co/Nibir/IrrMap](https://huggingface.co/Nibir/IrrMap/tree/main). Data Structure of the given repository:
 
 ```
 IrrMap/
