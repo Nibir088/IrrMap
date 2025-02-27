@@ -102,25 +102,39 @@ pip install -r requirements.txt
 ```bash
 cd LandSat_Processing
 ./sample_landsat_processing_pipeline.sh
-
-or 
-python find_available_data_landsat.py -s AZ -y 2016
-
-python download_available_data_landsat.py -s AZ -y 2016 -u "username" -p "password"
-
-python extract_files.py -s AZ
-
-python create_patches_landsat.py -s AZ
-
-python create_label_landsat.py --state AZ --year 2016
-
 cd Sentinel_Processing
-python process_sentinel.py
+./sample_sentinel_processing_pipeline.sh
+```
+or 
+```bash
+cd LandSat_Processing
+python find_available_data_landsat.py -s AZ -y 2016
+python download_available_data_landsat.py -s AZ -y 2016 -u "username" -p "password"
+python extract_files.py -s AZ
+python create_patches_landsat.py -s AZ
+python create_label_landsat.py --state AZ --year 2016
+cd Sentinel_Processing
+python find_available_data_sentinel.py -s AZ -y 2016 --start_date 2016-03-01 --end_date 2016-09-30 -o sentinel_AZ_2016.csv
+python download_available_data_sentinel.py -s AZ -y 2016 -u "username" -p "password"
+python extract_files.py -s AZ -y 2016
+python create_qa_band.py -p "Sentinel-UnZip/AZ"
+python create_patches_sentinel.py -s AZ -i "Sentinel-Unzip"
+python create_label_sentinel.py --state AZ --year 2016
 ```
 ### Train the Model
+Unzip train_test_split/LandSat.zip and train_test_split/Sentinel.zip and run
+
 ```bash
 cd Model_Training
-python train_model.py
+python train.py --data_path ../train_test_split/LandSat/IrrMap_combined.yaml \
+                --source landsat \
+                --input_types "image,ndvi" \
+                --epochs 5 \
+                --batch_size 32 \
+                --num_classes 4 \
+                --lr 0.0005 \
+                --devices -1 \
+                --strategy ddp
 ```
 
 ## Contributing
