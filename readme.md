@@ -7,7 +7,7 @@ The **IrrMap** is designed to process satellite imagery data from LandSat and Se
 
 Labeled data has been collected from different sources as follows:
 - Arizona: https://catalog.data.gov/dataset/verified-irrigated-agricultural-lands-for-the-united-states-200217
-- Utah: https: //dwre-utahdnr.opendata.arcgis.com/pages/wrlu-data
+- Utah: https: //dwre-utahdnr.opendata.arcgis.com/pages/wrlu-data 
 - Washington: https://agr.wa.gov/departments/land-and-water/natural-resources/agricultural-land-use
 - Colorado: https://dwr.colorado.gov/services/data-information/gis
 
