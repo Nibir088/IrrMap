@@ -40,6 +40,7 @@ KDD-2025-Data-Track/
 │── train_test_split/      # Scripts for splitting data into training and test sets
 │── Crop-Groups.csv        # Crop classification mapping file
 │── requirements.txt       # List of dependencies
+|── Manual_verification.zip # Patches that has been manually verified (0 indicates noisy and 1 indicates clean patch). 
 │── README.md              # Documentation
 ```
 
