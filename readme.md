@@ -1,7 +1,7 @@
 # IrrMap
 
 ## Overview
-The **IrrMap** is designed to process satellite imagery data from LandSat and Sentinel missions for developing and training machine learning models for irrigation classification. This repository includes tools for data preprocessing, feature extraction, model training, and evaluation.
+This is official git repository for our work IrrMap, published in **KDD 2025**. The **IrrMap** is designed to process satellite imagery data from LandSat and Sentinel missions for developing and training machine learning models for irrigation classification. This repository includes tools for data preprocessing, feature extraction, model training, and evaluation. Paper link: (https://arxiv.org/abs/2505.08273)
 
 ## Data Repository
 
