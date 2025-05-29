@@ -69,6 +69,11 @@ KDD-2025-Data-Track/
 ### Data Labeling
 - Preprocessing: Reprojection (EPSG:4326)
 - Label Merging: Shapely Library for overlay
+### Train Test Split
+- There are three zip file inside train_test_split.
+  - LandSat.zip contains train test split for LandSat patches for each states.
+  - Sentinel.zip contains train test split for Sentinel patches for each states.
+  - Subset_Training_Set.zip contains a small training dataset of 234861 patches for Sentinel and 26316 patches for LandSat.
 
 ## Model Training Pipeline
 1. **Data Preparation**:
